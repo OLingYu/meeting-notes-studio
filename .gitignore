@@ -1,0 +1,37 @@
+# ===== 运行时数据（含 API 密钥、真实录音转写、本机绝对路径，禁止入库）=====
+data/
+data/**
+*.bak
+
+# ===== 环境与凭据文件 =====
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# ===== 日志与依赖 =====
+*.log
+node_modules/
+
+# ===== 音视频素材（原始会议录音永不入库）=====
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.oga
+*.opus
+*.wma
+*.amr
+*.mp4
+*.m4v
+*.mov
+*.mkv
+*.webm
+
+# ===== 系统垃圾文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini

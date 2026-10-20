@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meeting Notes Studio · 会议纪要工坊</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">纪</div>
+        <div class="brand-text">
+          <strong>会议纪要工坊</strong>
+          <small>Meeting Notes Studio</small>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#/" data-nav="home"><span>任务</span></a>
+        <a href="#/new" data-nav="new"><span>新建任务</span></a>
+        <a href="#/workspaces" data-nav="workspaces"><span>工作区</span></a>
+        <a href="#/settings" data-nav="settings"><span>设置</span></a>
+      </nav>
+      <div class="sidebar-foot" id="sidebar-status"></div>
+    </aside>
+    <main class="view" id="view"></main>
+  </div>
+  <div id="toast-root" class="toast-root"></div>
+  <div id="modal-root"></div>
+  <script>window.__APP_TOKEN__ = "%%APP_TOKEN%%";</script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
